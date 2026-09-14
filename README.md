@@ -35,6 +35,12 @@ Most of my work goes into NeoForge Minecraft mods, both server-side and client-s
   <img src="https://img.shields.io/badge/Unreal%20Engine-ff4fa3?style=for-the-badge&logo=unrealengine&logoColor=0d1117" alt="Unreal Engine" />
 </p>
 
+## Downloads
+
+<div align="center">
+  <img src="badges/downloads.svg" alt="Mod downloads on Modrinth and CurseForge" />
+</div>
+
 ## Activity
 
 <div align="center">
