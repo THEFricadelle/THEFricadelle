@@ -26,7 +26,7 @@ Most of my work goes into NeoForge Minecraft mods, both server-side and client-s
 
 ## Tech stack
 
-<p>
+<p align="center">
   <img src="https://img.shields.io/badge/Java-ff4fa3?style=for-the-badge&logo=openjdk&logoColor=0d1117" alt="Java" />
   <img src="https://img.shields.io/badge/NeoForge-ff4fa3?style=for-the-badge" alt="NeoForge" />
   <img src="https://img.shields.io/badge/Lua-ff4fa3?style=for-the-badge&logo=lua&logoColor=0d1117" alt="Lua" />
