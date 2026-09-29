@@ -5,15 +5,17 @@ Author: THEFricadelle
 
 import json
 import sys
+import urllib.error
 import urllib.request
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-# Display name, Modrinth slug, CurseForge project ID. None when not yet published on that platform.
+# Display name, Modrinth slug or ID, CurseForge project ID. None when not published on that platform.
 MODS = [
     ("CustomPerm", "customperm", 1539594),
     ("Arcadia-Better-Creative", "arcadia-better-creative", 1617980),
-    ("Create: Belgian Snacks", None, 1715566),
+    ("Arcadia-Creative-Admin", "vVZZhJ5F", 1718055),
+    ("Create: Belgian Snacks", "g2beqwWZ", 1715566),
 ]
 
 OUTPUT = Path(__file__).resolve().parent.parent / "badges" / "downloads.svg"
@@ -43,12 +45,23 @@ def fetch_json(url):
         return json.load(response)
 
 
+def fetch_modrinth(slug):
+    # Modrinth answers 404 while a project is still in moderation.
+    try:
+        return int(fetch_json(f"https://api.modrinth.com/v2/project/{slug}")["downloads"])
+    except urllib.error.HTTPError as error:
+        if error.code != 404:
+            raise
+        print(f"Modrinth project {slug} not public yet", file=sys.stderr)
+        return None
+
+
 def fetch_counts():
     counts = []
     for name, slug, project_id in MODS:
         modrinth = None
         if slug is not None:
-            modrinth = int(fetch_json(f"https://api.modrinth.com/v2/project/{slug}")["downloads"])
+            modrinth = fetch_modrinth(slug)
         curseforge = None
         if project_id is not None:
             curseforge = int(fetch_json(f"https://api.cfwidget.com/{project_id}")["downloads"]["total"])

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="495" height="240" viewBox="0 0 495 240" role="img" aria-label="Mod downloads">
-<rect width="495" height="240" rx="6" fill="#0d1117"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="266" viewBox="0 0 495 266" role="img" aria-label="Mod downloads">
+<rect width="495" height="266" rx="6" fill="#0d1117"/>
 <text x="124" y="58" text-anchor="middle" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="30" font-weight="700" fill="#ff4fa3">1,037</text>
 <text x="124" y="84" text-anchor="middle" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="400" fill="#ff4fa3">CurseForge</text>
 <text x="371" y="58" text-anchor="middle" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="30" font-weight="700" fill="#ff4fa3">634</text>
@@ -15,7 +15,10 @@
 <text x="30" y="184" text-anchor="start" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="600" fill="#ff4fa3">63</text>
 <text x="247.5" y="184" text-anchor="middle" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="400" fill="#c9d1d9">Arcadia-Better-Creative</text>
 <text x="465" y="184" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="600" fill="#ff4fa3">90</text>
-<text x="30" y="210" text-anchor="start" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="600" fill="#ff4fa3">7</text>
-<text x="247.5" y="210" text-anchor="middle" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="400" fill="#c9d1d9">Create: Belgian Snacks</text>
+<text x="30" y="210" text-anchor="start" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="600" fill="#ff4fa3">0</text>
+<text x="247.5" y="210" text-anchor="middle" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="400" fill="#c9d1d9">Arcadia-Creative-Admin</text>
 <text x="465" y="210" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="600" fill="#ff4fa3">-</text>
+<text x="30" y="236" text-anchor="start" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="600" fill="#ff4fa3">7</text>
+<text x="247.5" y="236" text-anchor="middle" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="400" fill="#c9d1d9">Create: Belgian Snacks</text>
+<text x="465" y="236" text-anchor="end" font-family="'Segoe UI', Ubuntu, 'Helvetica Neue', sans-serif" font-size="14" font-weight="600" fill="#ff4fa3">-</text>
 </svg>
