@@ -9,10 +9,11 @@ import urllib.request
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-# Display name, Modrinth slug, CurseForge project ID.
+# Display name, Modrinth slug, CurseForge project ID. None when not yet published on that platform.
 MODS = [
     ("CustomPerm", "customperm", 1539594),
     ("Arcadia-Better-Creative", "arcadia-better-creative", 1617980),
+    ("Create: Belgian Snacks", None, 1715566),
 ]
 
 OUTPUT = Path(__file__).resolve().parent.parent / "badges" / "downloads.svg"
@@ -45,8 +46,12 @@ def fetch_json(url):
 def fetch_counts():
     counts = []
     for name, slug, project_id in MODS:
-        modrinth = int(fetch_json(f"https://api.modrinth.com/v2/project/{slug}")["downloads"])
-        curseforge = int(fetch_json(f"https://api.cfwidget.com/{project_id}")["downloads"]["total"])
+        modrinth = None
+        if slug is not None:
+            modrinth = int(fetch_json(f"https://api.modrinth.com/v2/project/{slug}")["downloads"])
+        curseforge = None
+        if project_id is not None:
+            curseforge = int(fetch_json(f"https://api.cfwidget.com/{project_id}")["downloads"]["total"])
         counts.append((name, modrinth, curseforge))
     return counts
 
@@ -58,9 +63,13 @@ def text(x, y, content, size, color, anchor="middle", weight=400):
     )
 
 
+def format_count(count):
+    return "-" if count is None else f"{count:,}"
+
+
 def render(counts):
-    total_modrinth = sum(row[1] for row in counts)
-    total_curseforge = sum(row[2] for row in counts)
+    total_modrinth = sum(row[1] or 0 for row in counts)
+    total_curseforge = sum(row[2] or 0 for row in counts)
     height = ROWS_TOP + ROW_HEIGHT * len(counts) + 12
 
     parts = [
@@ -79,9 +88,9 @@ def render(counts):
     ]
     for index, (name, modrinth, curseforge) in enumerate(counts):
         y = ROWS_TOP + ROW_HEIGHT * index + 8
-        parts.append(text(ROW_CURSEFORGE, y, f"{curseforge:,}", 14, ACCENT, anchor="start", weight=600))
+        parts.append(text(ROW_CURSEFORGE, y, format_count(curseforge), 14, ACCENT, anchor="start", weight=600))
         parts.append(text(ROW_NAME, y, name, 14, TEXT))
-        parts.append(text(ROW_MODRINTH, y, f"{modrinth:,}", 14, ACCENT, anchor="end", weight=600))
+        parts.append(text(ROW_MODRINTH, y, format_count(modrinth), 14, ACCENT, anchor="end", weight=600))
     parts.append("</svg>")
     return "\n".join(parts) + "\n"
 
