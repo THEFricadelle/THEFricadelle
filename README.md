@@ -19,8 +19,12 @@ Most of my work goes into NeoForge Minecraft mods, both server-side and client-s
     <td>Server-enforced creative mode rules, with named profiles defining what players may take.</td>
   </tr>
   <tr>
-    <td>🧰 <b>Arcadia-Better-Creative</b> <sub>(private)</sub></td>
+    <td>🧰 <a href="https://github.com/Team-Arcadia/Arcadia-Better-Creative"><b>Arcadia-Better-Creative</b></a></td>
     <td>Quality-of-life improvements for the creative inventory.</td>
+  </tr>
+  <tr>
+    <td>🍟 <a href="https://github.com/THEFricadelle/Create-Belgian-Snacks"><b>Create: Belgian Snacks</b></a></td>
+    <td>A Create addon bringing Belgian snacks to your factory, starting with the fricadelle.</td>
   </tr>
 </table>
 
@@ -66,8 +70,12 @@ L'essentiel de mon travail, ce sont des mods Minecraft NeoForge, côté serveur 
     <td>Règles du mode créatif imposées côté serveur, avec des profils nommés qui définissent ce que les joueurs peuvent prendre.</td>
   </tr>
   <tr>
-    <td>🧰 <b>Arcadia-Better-Creative</b> <sub>(privé)</sub></td>
+    <td>🧰 <a href="https://github.com/Team-Arcadia/Arcadia-Better-Creative"><b>Arcadia-Better-Creative</b></a></td>
     <td>Améliorations de confort pour l'inventaire créatif.</td>
+  </tr>
+  <tr>
+    <td>🍟 <a href="https://github.com/THEFricadelle/Create-Belgian-Snacks"><b>Create: Belgian Snacks</b></a></td>
+    <td>Un addon Create qui amène les snacks belges dans ton usine, en commençant par la fricadelle.</td>
   </tr>
 </table>
 
