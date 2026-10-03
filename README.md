@@ -11,22 +11,24 @@ Most of my work goes into NeoForge Minecraft mods, both server-side and client-s
 
 <table>
   <tr>
-    <td width="36%">🛡️ <a href="https://github.com/Team-Arcadia/CustomPerm"><b>CustomPerm</b></a></td>
+    <td width="36%">🛡️ <a href="https://www.curseforge.com/minecraft/mc-mods/customperm"><b>CustomPerm</b></a> · <a href="https://modrinth.com/mod/customperm">Modrinth</a></td>
     <td>Granular permissions for NeoForge: give vanilla and modded commands to non-op players.</td>
   </tr>
   <tr>
-    <td>🎨 <a href="https://github.com/Team-Arcadia/Arcadia-Creative-Admin"><b>Arcadia-Creative-Admin</b></a></td>
+    <td>🎨 <a href="https://www.curseforge.com/minecraft/mc-mods/creative-admin"><b>Arcadia-Creative-Admin</b></a></td>
     <td>Server-enforced creative mode rules, with named profiles defining what players may take.</td>
   </tr>
   <tr>
-    <td>🧰 <a href="https://github.com/Team-Arcadia/Arcadia-Better-Creative"><b>Arcadia-Better-Creative</b></a></td>
+    <td>🧰 <a href="https://www.curseforge.com/minecraft/mc-mods/better-creative"><b>Arcadia-Better-Creative</b></a></td>
     <td>Quality-of-life improvements for the creative inventory.</td>
   </tr>
   <tr>
-    <td>🍟 <a href="https://github.com/THEFricadelle/Create-Belgian-Snacks"><b>Create: Belgian Snacks</b></a></td>
+    <td>🍟 <a href="https://www.curseforge.com/minecraft/mc-mods/create-belgian-snacks"><b>Create: Belgian Snacks</b></a></td>
     <td>A Create addon bringing Belgian snacks to your factory, starting with the fricadelle.</td>
   </tr>
 </table>
+
+Found a bug in one of these mods? Report it on [mc-mods-issues](https://github.com/THEFricadelle/mc-mods-issues/issues).
 
 ## Tech stack
 
@@ -62,22 +64,24 @@ L'essentiel de mon travail, ce sont des mods Minecraft NeoForge, côté serveur 
 
 <table>
   <tr>
-    <td width="36%">🛡️ <a href="https://github.com/Team-Arcadia/CustomPerm"><b>CustomPerm</b></a></td>
+    <td width="36%">🛡️ <a href="https://www.curseforge.com/minecraft/mc-mods/customperm"><b>CustomPerm</b></a> · <a href="https://modrinth.com/mod/customperm">Modrinth</a></td>
     <td>Permissions fines pour NeoForge : donner des commandes vanilla et moddées aux joueurs non-op.</td>
   </tr>
   <tr>
-    <td>🎨 <a href="https://github.com/Team-Arcadia/Arcadia-Creative-Admin"><b>Arcadia-Creative-Admin</b></a></td>
+    <td>🎨 <a href="https://www.curseforge.com/minecraft/mc-mods/creative-admin"><b>Arcadia-Creative-Admin</b></a></td>
     <td>Règles du mode créatif imposées côté serveur, avec des profils nommés qui définissent ce que les joueurs peuvent prendre.</td>
   </tr>
   <tr>
-    <td>🧰 <a href="https://github.com/Team-Arcadia/Arcadia-Better-Creative"><b>Arcadia-Better-Creative</b></a></td>
+    <td>🧰 <a href="https://www.curseforge.com/minecraft/mc-mods/better-creative"><b>Arcadia-Better-Creative</b></a></td>
     <td>Améliorations de confort pour l'inventaire créatif.</td>
   </tr>
   <tr>
-    <td>🍟 <a href="https://github.com/THEFricadelle/Create-Belgian-Snacks"><b>Create: Belgian Snacks</b></a></td>
+    <td>🍟 <a href="https://www.curseforge.com/minecraft/mc-mods/create-belgian-snacks"><b>Create: Belgian Snacks</b></a></td>
     <td>Un addon Create qui amène les snacks belges dans ton usine, en commençant par la fricadelle.</td>
   </tr>
 </table>
+
+Un bug dans l'un de ces mods ? Signale-le sur [mc-mods-issues](https://github.com/THEFricadelle/mc-mods-issues/issues).
 
 ---
 
