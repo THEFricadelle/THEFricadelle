@@ -16,6 +16,7 @@ MODS = [
     ("Arcadia-Better-Creative", "arcadia-better-creative", 1617980),
     ("Arcadia-Creative-Admin", "vVZZhJ5F", 1718055),
     ("Create: Belgian Snacks", "g2beqwWZ", 1715566),
+    ("Drop the Beam", "drop-the-beam", None),
 ]
 
 OUTPUT = Path(__file__).resolve().parent.parent / "badges" / "downloads.svg"
@@ -56,6 +57,17 @@ def fetch_modrinth(slug):
         return None
 
 
+def fetch_curseforge(project_id):
+    # cfwidget answers 404 until a project is approved and public.
+    try:
+        return int(fetch_json(f"https://api.cfwidget.com/{project_id}")["downloads"]["total"])
+    except urllib.error.HTTPError as error:
+        if error.code != 404:
+            raise
+        print(f"CurseForge project {project_id} not public yet", file=sys.stderr)
+        return None
+
+
 def fetch_counts():
     counts = []
     for name, slug, project_id in MODS:
@@ -64,7 +76,7 @@ def fetch_counts():
             modrinth = fetch_modrinth(slug)
         curseforge = None
         if project_id is not None:
-            curseforge = int(fetch_json(f"https://api.cfwidget.com/{project_id}")["downloads"]["total"])
+            curseforge = fetch_curseforge(project_id)
         counts.append((name, modrinth, curseforge))
     return counts
 

@@ -26,6 +26,10 @@ Most of my work goes into NeoForge Minecraft mods, both server-side and client-s
     <td>🍟 <a href="https://www.curseforge.com/minecraft/mc-mods/create-belgian-snacks"><b>Create: Belgian Snacks</b></a></td>
     <td>A Create addon bringing Belgian snacks to your factory, starting with the fricadelle.</td>
   </tr>
+  <tr>
+    <td>🔦 <a href="https://www.curseforge.com/minecraft/mc-mods/drop-the-beam"><b>Drop the Beam</b></a> · <a href="https://modrinth.com/mod/drop-the-beam">Modrinth</a></td>
+    <td>Festival laser shows and stage lighting: modular spotlights, haze, colored light, and music that drives the show.</td>
+  </tr>
 </table>
 
 Found a bug in one of these mods? Report it on [mc-mods-issues](https://github.com/THEFricadelle/mc-mods-issues/issues).
@@ -78,6 +82,10 @@ L'essentiel de mon travail, ce sont des mods Minecraft NeoForge, côté serveur 
   <tr>
     <td>🍟 <a href="https://www.curseforge.com/minecraft/mc-mods/create-belgian-snacks"><b>Create: Belgian Snacks</b></a></td>
     <td>Un addon Create qui amène les snacks belges dans ton usine, en commençant par la fricadelle.</td>
+  </tr>
+  <tr>
+    <td>🔦 <a href="https://www.curseforge.com/minecraft/mc-mods/drop-the-beam"><b>Drop the Beam</b></a> · <a href="https://modrinth.com/mod/drop-the-beam">Modrinth</a></td>
+    <td>Spectacles laser et éclairage de scène façon festival : spots modulaires, brume, lumière colorée, et une musique qui pilote le show.</td>
   </tr>
 </table>
 
