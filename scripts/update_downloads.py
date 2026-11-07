@@ -18,7 +18,7 @@ MODS = [
     ("Arcadia-Better-Creative", "R4nyiIpA", 1617980),
     ("Arcadia-Creative-Admin", "vVZZhJ5F", 1718055),
     ("Create: Belgian Snacks", "g2beqwWZ", 1715566),
-    ("Drop the Beam", "drop-the-beam", "minecraft/mc-mods/drop-the-beam"),
+    ("Drop the Beam", "drop-the-beam", 1771365),
     ("Festive Skies", "festive-skies", "minecraft/mc-mods/festive-skies"),
 ]
 
