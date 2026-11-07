@@ -10,13 +10,16 @@ import urllib.request
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-# Display name, Modrinth slug or ID, CurseForge project ID. None when not published on that platform.
+# Display name, Modrinth project ID, CurseForge project ID or cfwidget path. None when not published there.
+# Modrinth IDs never change, unlike slugs. Use a slug only while the ID is unknown (project still in moderation).
+# A cfwidget path ("minecraft/mc-mods/<slug>") stands in for a CurseForge ID until the project is approved.
 MODS = [
-    ("CustomPerm", "customperm", 1539594),
-    ("Arcadia-Better-Creative", "arcadia-better-creative", 1617980),
+    ("CustomPerm", "22HPh5sp", 1539594),
+    ("Arcadia-Better-Creative", "R4nyiIpA", 1617980),
     ("Arcadia-Creative-Admin", "vVZZhJ5F", 1718055),
     ("Create: Belgian Snacks", "g2beqwWZ", 1715566),
-    ("Drop the Beam", "drop-the-beam", None),
+    ("Drop the Beam", "drop-the-beam", "minecraft/mc-mods/drop-the-beam"),
+    ("Festive Skies", "festive-skies", "minecraft/mc-mods/festive-skies"),
 ]
 
 OUTPUT = Path(__file__).resolve().parent.parent / "badges" / "downloads.svg"
@@ -38,6 +41,11 @@ ROWS_TOP = 150
 ROW_HEIGHT = 26
 
 
+def warn(message):
+    # Shown as an annotation on the Actions run, so a renamed or removed project does not go unnoticed.
+    print(f"::warning::{message}", file=sys.stderr)
+
+
 def fetch_json(url):
     request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
     with urllib.request.urlopen(request, timeout=30) as response:
@@ -53,7 +61,7 @@ def fetch_modrinth(slug):
     except urllib.error.HTTPError as error:
         if error.code != 404:
             raise
-        print(f"Modrinth project {slug} not public yet", file=sys.stderr)
+        warn(f"Modrinth project {slug} not found (in moderation, renamed or removed)")
         return None
 
 
@@ -64,7 +72,7 @@ def fetch_curseforge(project_id):
     except urllib.error.HTTPError as error:
         if error.code != 404:
             raise
-        print(f"CurseForge project {project_id} not public yet", file=sys.stderr)
+        warn(f"CurseForge project {project_id} not found (not approved yet, renamed or removed)")
         return None
 
 

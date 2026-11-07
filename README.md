@@ -19,7 +19,7 @@ Most of my work goes into NeoForge Minecraft mods, both server-side and client-s
     <td>Server-enforced creative mode rules, with named profiles defining what players may take.</td>
   </tr>
   <tr>
-    <td>🧰 <a href="https://www.curseforge.com/minecraft/mc-mods/better-creative"><b>Arcadia-Better-Creative</b></a></td>
+    <td>🧰 <a href="https://www.curseforge.com/minecraft/mc-mods/better-creative"><b>Arcadia-Better-Creative</b></a> · <a href="https://modrinth.com/mod/better-creative">Modrinth</a></td>
     <td>Quality-of-life improvements for the creative inventory.</td>
   </tr>
   <tr>
@@ -29,6 +29,10 @@ Most of my work goes into NeoForge Minecraft mods, both server-side and client-s
   <tr>
     <td>🔦 <a href="https://www.curseforge.com/minecraft/mc-mods/drop-the-beam"><b>Drop the Beam</b></a> · <a href="https://modrinth.com/mod/drop-the-beam">Modrinth</a></td>
     <td>Festival laser shows and stage lighting: modular spotlights, haze, colored light, and music that drives the show.</td>
+  </tr>
+  <tr>
+    <td>🎁 <a href="https://www.curseforge.com/minecraft/mc-mods/festive-skies"><b>Festive Skies</b></a> · <a href="https://modrinth.com/mod/festive-skies">Modrinth</a></td>
+    <td>Seasonal events in the sky: at Christmas, a reindeer sleigh flies over players at night and drops gifts under parachutes.</td>
   </tr>
 </table>
 
@@ -76,7 +80,7 @@ L'essentiel de mon travail, ce sont des mods Minecraft NeoForge, côté serveur 
     <td>Règles du mode créatif imposées côté serveur, avec des profils nommés qui définissent ce que les joueurs peuvent prendre.</td>
   </tr>
   <tr>
-    <td>🧰 <a href="https://www.curseforge.com/minecraft/mc-mods/better-creative"><b>Arcadia-Better-Creative</b></a></td>
+    <td>🧰 <a href="https://www.curseforge.com/minecraft/mc-mods/better-creative"><b>Arcadia-Better-Creative</b></a> · <a href="https://modrinth.com/mod/better-creative">Modrinth</a></td>
     <td>Améliorations de confort pour l'inventaire créatif.</td>
   </tr>
   <tr>
@@ -86,6 +90,10 @@ L'essentiel de mon travail, ce sont des mods Minecraft NeoForge, côté serveur 
   <tr>
     <td>🔦 <a href="https://www.curseforge.com/minecraft/mc-mods/drop-the-beam"><b>Drop the Beam</b></a> · <a href="https://modrinth.com/mod/drop-the-beam">Modrinth</a></td>
     <td>Spectacles laser et éclairage de scène façon festival : spots modulaires, brume, lumière colorée, et une musique qui pilote le show.</td>
+  </tr>
+  <tr>
+    <td>🎁 <a href="https://www.curseforge.com/minecraft/mc-mods/festive-skies"><b>Festive Skies</b></a> · <a href="https://modrinth.com/mod/festive-skies">Modrinth</a></td>
+    <td>Des événements saisonniers dans le ciel : à Noël, un traîneau de rennes survole les joueurs la nuit et largue des cadeaux en parachute.</td>
   </tr>
 </table>
 
