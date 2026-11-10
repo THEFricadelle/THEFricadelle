@@ -19,7 +19,7 @@ MODS = [
     ("Arcadia-Creative-Admin", "vVZZhJ5F", 1718055),
     ("Create: Belgian Snacks", "g2beqwWZ", 1715566),
     ("Drop the Beam", "drop-the-beam", 1771365),
-    ("Festive Skies", "festive-skies", "minecraft/mc-mods/festive-skies"),
+    ("Festive Skies", "festive-skies", 1788180),
 ]
 
 OUTPUT = Path(__file__).resolve().parent.parent / "badges" / "downloads.svg"
